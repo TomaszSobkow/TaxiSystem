@@ -93,7 +93,7 @@ public Vehicles(){VehiclesInicialisation();}
          vehiclesInArray.add(miniBus3);
     }
 
-    void printVehicle(){
+    void printVehicles(){
          for(int i = 0; i < vehiclesInArray.size(); i++){
              System.out.println(vehiclesInArray.get(i));
          }
