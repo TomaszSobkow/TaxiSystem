@@ -5,8 +5,11 @@ public class Main {
 
 
     public static void main(String[] args){
+        Menu menu = new Menu();
         Driver driver = new Driver();
-        driver.addNewDriver();
+        Vehicles vehicle = new Vehicles();
+      vehicle.printVehicle();
+
 
 
 

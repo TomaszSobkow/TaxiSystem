@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Driver {
@@ -35,7 +36,7 @@ public class Driver {
     float getDriverTotalIncome(){return driverTotalIncome;}
     float getDriverTotalKilometresDriven(){return driverKilometersDriven;}
 
-    void setAvilability(String driverAvailability){this.driverAvailability = driverAvailability;}
+    void setAvailability(String driverAvailability){this.driverAvailability = driverAvailability;}
     void setKilometres(float driverKilometersDriven){this.driverKilometersDriven = driverKilometersDriven;}
     void setDriverTotalAmount(float driverTotalIncome){this.driverTotalIncome = driverTotalIncome;}
     void setDriverTotalKilometresDriven(float driverKilometersDriven){this.driverKilometersDriven = driverKilometersDriven;}
@@ -47,7 +48,7 @@ public class Driver {
     Driver brendan;
     Driver vincent;
 
-    ArrayList<Driver> driversArray = new ArrayList<>();
+    List<Driver> driversArray = new ArrayList<>();
 
     void driversInArray() {
 
@@ -65,32 +66,13 @@ public class Driver {
         driversArray.add(brendan);
         driversArray.add(vincent);
    }
-
-   Scanner input = new Scanner(System.in);
-   void addNewDriver(){
-       boolean driverIdBoolean = false;
-       boolean driverNameBoolean = false;
-
-         // driverID veryfication
-       do{
-           System.out.print("Please enter driver ID: ");
-           String driverID = input.nextLine();
-             if(driverID.length() != 8)
-             System.out.println("Invalid driver ID should be only 8 marks !!!!!!");
-            else
-                driverIdBoolean = true;
-       }while (!driverIdBoolean);
-
-       //driver Name veryfication
-       do{
-           System.out.print("Please enter driver Name: ");
-           String driverName = input.nextLine();
-
-       }while(!driverNameBoolean);
-
-
+   void printDriver(){
+        for(int i = 0; i < driversArray.size(); i++){
+            System.out.println(driversArray.get(i));
+        }
    }
 
+@Override
     public String toString() {
         if (month == 8){ monthAsString = "August";}
         else if (month == 12) {monthAsString = "December";}
