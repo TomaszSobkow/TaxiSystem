@@ -6,7 +6,7 @@ public class Fare {
 
      void menuControl(){
         String menuControl = JOptionPane.showInputDialog(null,"********** Welcome at Taxi SYSTEM **********"+
-                                    "\n\n        1.  NEW Fare \t\t " + "\n        2.  Check Active Fares"+
+                                    "\n\n        1. NEW Fare \t\t " + "\n        2.  Check Active Fares"+
                                     "\n        3.  Print Drivers\t    " + "\n        4.  Print Vehicles"+
                                     "\n\nQ.  Close Program"+"\n\n");
         switch (menuControl.toLowerCase()){
